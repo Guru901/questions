@@ -28,12 +28,8 @@ function App() {
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="flex flex-col items-center gap-2 justify-center h-[calc(100vh-100px)] w-full">
-        <img
-          src={image}
-          alt="image"
-          className="h-full rounded-md object-cover"
-        />
+      <div className="flex flex-col items-center gap-2 justify-center h-[calc(100vh-300px)] w-full">
+        <img src={image} alt="image" className="h-[25rem] rounded-md" />
         <button className="btn btn-neutral mt-2" onClick={selectImage}>
           Next Image
         </button>
