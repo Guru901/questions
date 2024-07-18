@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 function App() {
   // Generate an array of image URLs
   const generateImageUrls = () => {
-    const baseUrl = "src/assets/1 (";
+    const baseUrl = "/assets/1 (";
     const extension = ").png";
     const imageUrls = [];
 
-    for (let i = 1; i <= 209; i++) {
+    for (let i = 1; i <= 108; i++) {
       imageUrls.push(`${baseUrl}${i}${extension}`);
     }
 
@@ -28,11 +28,11 @@ function App() {
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="flex flex-col items-center gap-2 justify-center h-[calc(100vh-200px)] w-full">
+      <div className="flex flex-col items-center gap-2 justify-center h-[calc(100vh-100px)] w-full">
         <img
           src={image}
           alt="image"
-          className="h-[calc(100vh-200px)] rounded-md object-cover"
+          className="h-full rounded-md object-cover"
         />
         <button className="btn btn-neutral mt-2" onClick={selectImage}>
           Next Image
